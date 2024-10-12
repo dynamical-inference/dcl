@@ -1,0 +1,35 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: >-
+  Self-supervised contrastive learning performs non-linear
+  system identification
+authors:
+  - given-names: "Rodrigo"
+    family-names: "González Laiz"
+  - given-names: "Tobias"
+    family-names: "Schmidt"
+  - given-names: "Steffen"
+    family-names: "Schneider"
+identifiers:
+  - type: url
+    value: 'https://openreview.net/forum?id=ONfWFluZBI'
+repository-code: 'https://github.com/dynamical-inference/dcl'
+
+preferred-citation:
+  title: >-
+    Self-supervised contrastive learning performs non-linear
+    system identification
+  authors:
+    - given-names: "Rodrigo"
+      family-names: "González Laiz"
+    - given-names: "Tobias"
+      family-names: "Schmidt"
+    - given-names: "Steffen"
+      family-names: "Schneider"
+  type: "conference-paper"
+  collection-title: "The Thirteenth International Conference on Learning Representations (ICLR)"
+  year: 2025
+  url: https://openreview.net/forum?id=ONfWFluZBI

@@ -1,0 +1,73 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+    "wheel",
+    "packaging>=24.2"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.yapf]
+based_on_style = "google"
+indent_width = 4
+
+
+[tool.isort]
+force_single_line = true
+force_sort_within_sections = false
+lexicographical = true
+single_line_exclusions = ['typing']
+order_by_type = false
+group_by_package = true
+#skip = [
+#    "__init__.py",
+#    "third_party"
+#]
+
+
+
+
+[tool.ruff]
+# Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
+select = ["E", "F"]
+ignore = ["F722"] #why? https://docs.kidger.site/jaxtyping/faq/#flake8-or-ruff-are-throwing-an-error
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    "**/*.ipynb",
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# Same as Black.
+line-length = 160
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Assume Python 3.10.
+target-version = "py310"
+
+ignore-init-module-imports = true

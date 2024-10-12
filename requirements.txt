@@ -1,0 +1,15 @@
+ipykernel
+typeguard==2.13.3
+jaxtyping>=0.2.38
+python-dotenv
+numpy==1.26.4
+
+scikit-learn>=1.4.0
+#scikit-learn-extra>=0.3.0
+git-python
+diskcache
+cython
+cloudpickle
+plotly
+datajoint==0.14.3
+filelock>=3.13.1
